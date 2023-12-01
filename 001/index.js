@@ -1,4 +1,5 @@
-const file = require('fs').readFileSync(`${__dirname}/${__dirname.split('/').pop()}.txt`, 'utf8')
+const file = require('fs')
+  .readFileSync(`${__dirname}/${__dirname.split('/').pop()}.txt`, 'utf8')
   .split('\n')
   .filter(line => line)
 
